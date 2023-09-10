@@ -1,0 +1,46 @@
+body {
+
+  padding: 40px;
+  font-family: Helvetica;
+  text-align: center;
+}
+
+// .container {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .column {
+//   flex: 1;
+//   padding: 10px;
+//   /* Add any other styles you need for your columns here */
+// }
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .column {
+      width: 100%;
+  }
+}
+
+.wordcloud {
+  width: 100%;
+
+}
