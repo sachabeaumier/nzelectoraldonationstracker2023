@@ -1,30 +1,33 @@
+import './App.scss'
+
 export default function WordCloud() {
   return (
     <>
       <div></div>
 
-      <div id="container">
-        <div id="left">
+      <div className="container">
+        <div className="column">
           <h1>Green Party</h1>
           <img
             src="https://profoundbathroomgraf.s3.ap-southeast-2.amazonaws.com/greenpartywordcloud.png"
             alt="Green Party wordcloud"
           ></img>
         </div>
-        <div id="middle">
+        <div className="column">
           <h1>ACT Party</h1>
           <img
             src="https://profoundbathroomgraf.s3.ap-southeast-2.amazonaws.com/ACTwordcloudv2.png"
             alt="ACT Party wordcloud"
           ></img>
         </div>
-        <div id="right">
-          <h1>Vision NZ</h1>
-          <img
-            src="https://profoundbathroomgraf.s3.ap-southeast-2.amazonaws.com/VisionNZPartyv2.png"
-            alt="Vision NZ wordcloud"
-          ></img>
-        </div>
+      </div>
+
+      <div className="column">
+        <h1>Vision NZ</h1>
+        <img
+          src="https://profoundbathroomgraf.s3.ap-southeast-2.amazonaws.com/VisionNZPartyv2.png"
+          alt="Vision NZ wordcloud"
+        ></img>
       </div>
 
       <div id="container">

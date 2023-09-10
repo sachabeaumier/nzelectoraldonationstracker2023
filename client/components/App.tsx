@@ -1,6 +1,8 @@
 import WordCloud from './WordCloud'
 import OpenAPI from './OpenAPI'
-// import './my-sass.css'
+import './App.scss'
+import LineChartFunction from './Chart'
+import TotalChart from './GrandTotalChart'
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         </h1>
         <WordCloud />
         <OpenAPI />
+        <LineChartFunction />
+        <TotalChart />
       </section>
     </>
   )
