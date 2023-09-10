@@ -1,8 +1,10 @@
 import WordCloud from './WordCloud'
 import OpenAPI from './OpenAPI'
 import './App.scss'
-import LineChartFunction from './Chart'
+import { DonationChart } from './Chart'
 import TotalChart from './GrandTotalChart'
+import { donationsdata } from '../static/donationsdata'
+import { Renderlinechart } from './PartyLineCharts'
 
 function App() {
   return (
@@ -13,14 +15,28 @@ function App() {
       <section className="main">{/* add your code here */}</section>
 
       <section className="wordcloud">
-        <h1>
-          Wordclouds of donations by productive sectors made to each Political
-          Party
-        </h1>
         <WordCloud />
-        <OpenAPI />
-        <LineChartFunction />
+      </section>
+
+      <section>
+        {/* <DonationChart data={donationsdata} /> */}
+        <div className="container">
+          <div className="column">
+            <h1>Rendered Linechart 1</h1>
+            <Renderlinechart />
+          </div>
+          <div className="column">
+            <h1>Rendered Linechart 2</h1>
+            <Renderlinechart />
+          </div>
+          <div className="column">
+            <h1>Rendered Linechart 3</h1>
+            <Renderlinechart />
+          </div>
+        </div>
+        <h1>Total Chart</h1>
         <TotalChart />
+        <OpenAPI />
       </section>
     </>
   )
