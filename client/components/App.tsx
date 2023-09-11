@@ -1,7 +1,7 @@
 import WordCloud from './WordCloud'
 import OpenAPI from './OpenAPI'
 import './App.scss'
-import { DonationChart } from './Chart'
+import TotalLineGraph from './Chart'
 import TotalChart from './GrandTotalChart'
 import { donationsdata } from '../static/donationsdata'
 import { Renderlinechart } from './PartyLineCharts'
@@ -36,6 +36,7 @@ function App() {
         </div>
         <h1>Total Chart</h1>
         <TotalChart />
+        <TotalLineGraph />
         <OpenAPI />
       </section>
     </>
